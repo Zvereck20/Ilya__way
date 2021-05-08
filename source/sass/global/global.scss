@@ -17,11 +17,6 @@
   overflow-x: hidden;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -36,6 +31,7 @@ img {
 }
 
 .button {
+  margin: 0 auto;
   text-decoration: none;
   display: flex;
   box-sizing: border-box;
@@ -49,16 +45,17 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $main-background;
+  background-color: $highlight-color;
   border: none;
 
   &:hover {
     background-color: $hover-color;
   }
 
- @media(min-width: $tablet-width) {
-  width: 250px;
-  height: 75px;
- }
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    height: 75px;
+  }
 }
 
 .block-heading {
@@ -66,20 +63,21 @@ img {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
+  text-align: center;
 }
 
-// .container {
-//   min-width: 260px;
-//   padding: 0 30px;
+.container {
+  min-width: 260px;
+  padding: 0 16px;
 
-//   @media (min-width: $tablet-width) {
-//     min-width: 668px;
-//     padding: 0 50px;
-//   }
+  // @media (min-width: $tablet-width) {
+  //   min-width: 668px;
+  //   padding: 0 50px;
+  // }
 
-//   @media (min-width: $desktop-width) {
-//     max-width: 1050px;
-//     padding: 0 50px;
-//     margin: 0 auto;
-//   }
-// }
+  // @media (min-width: $desktop-width) {
+  //   max-width: 1050px;
+  //   padding: 0 50px;
+  //   margin: 0 auto;
+  // }
+}

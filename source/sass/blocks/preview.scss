@@ -1,0 +1,38 @@
+.preview__wrap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.preview__item {
+  padding: 13px 16px 13px 16px;
+  list-style: none;
+  align-items: start;
+  position: relative;
+
+  &:first-of-type {
+    padding-top: 3px;
+  }
+}
+
+.preview__heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.415px;
+  text-align: center;
+
+  &--wrap {
+    padding-top: 17px;
+    width: 215px;
+    height: 44px;
+    background-color: $main-background;
+    position: absolute;
+    bottom: 22px;
+    left: 52px;
+  }
+}

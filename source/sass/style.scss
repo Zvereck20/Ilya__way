@@ -4,6 +4,27 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 
-// Blocks
+// Header
 
+@import "blocks/header-navigation.scss";
+@import "blocks/header.scss";
 
+// Main
+
+@import "blocks/main.scss";
+@import "blocks/tour.scss";
+@import "blocks/places.scss";
+@import "blocks/preview.scss";
+@import "blocks/countrys.scss";
+@import "blocks/description.scss";
+@import "blocks/reviews.scss";
+@import "blocks/prices.scss";
+@import "blocks/advantages.scss";
+@import "blocks/feedback.scss";
+
+// Footer
+
+@import "blocks/footer.scss";
+@import "blocks/travels.scss";
+@import "blocks/contacts.scss";
+@import "blocks/corporate.scss";

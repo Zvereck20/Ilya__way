@@ -1,0 +1,65 @@
+.reviews {
+  padding-top: 49px;
+  padding-bottom: 91px;
+}
+
+.reviews__wrap {
+  height: 366px;
+  padding-top: 51px;
+  border-color: inherit;
+  background-image: url("../img/greece-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 82%;
+}
+
+.reviews__container {
+  margin: 0 26px;
+  padding-top: 16px;
+  height: 415px;
+  background-color: $main-background;
+}
+
+.reviews__heading {
+  margin-bottom: 11px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.691667px;
+
+  &--decorate {
+    width: 68px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: $highlight-color;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 9px;
+  padding: 7px 20px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.408333px;
+  opacity: 0.7;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person__avatar {
+  border-radius: 50%;
+}
+
+.person__name {
+  margin-top: 11px;
+  padding-left: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}

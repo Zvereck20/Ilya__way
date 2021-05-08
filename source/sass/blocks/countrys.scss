@@ -1,0 +1,38 @@
+.countrys {
+  width: 304px;
+  overflow-x: scroll;
+  padding-top: 13px;
+  padding-left: 16px;
+}
+
+.countrys__list {
+  padding: 0;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countrys__item {
+  list-style: none;
+  align-items: start;
+  padding: 0 50px 10px 50px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.countrys__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  text-decoration: none;
+  color: $text-color;
+  opacity: 0.3;
+}
