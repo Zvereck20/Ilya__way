@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 56px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 177px;
+      position: absolute;
+      top: 80px;
+      right: 46%;
+      background-color: $border-color;
+    }
+  }
+}
+
+.footer__heading {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: $darck-color;
+}

@@ -1,3 +1,10 @@
+.prices__heading {
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 19px;
+  }
+}
+
 .prices__text {
   text-align: center;
   line-height: 170%;
@@ -11,6 +18,10 @@
   line-height: 34px;
   text-align: center;
   color: $darck-color;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
 
 .prices__telephone {
@@ -20,4 +31,8 @@
   line-height: 32px;
   text-align: center;
   color: $highlight-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
 }

@@ -1,3 +1,10 @@
+.tour {
+  @media (min-width: $tablet-width) {
+    padding-top: 104px;
+    padding-bottom: 48px;
+  }
+}
+
 .tour__text {
   padding-top: 5px;
   padding-bottom: 3px;
@@ -5,6 +12,12 @@
   text-align: center;
   line-height: 170%;
   letter-spacing: -0.466667px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 150px;
+    margin-bottom: 10px;
+    color: $main-background;
+  }
 }
 
 .tour__button {

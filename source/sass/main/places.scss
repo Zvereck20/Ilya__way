@@ -5,4 +5,8 @@
 .places__text {
   text-align: center;
   letter-spacing: -0.466667px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 180px;
+  }
 }

@@ -6,25 +6,25 @@
 
 // Header
 
-@import "blocks/header-navigation.scss";
-@import "blocks/header.scss";
+@import "header/header-navigation.scss";
+@import "header/header.scss";
 
 // Main
 
-@import "blocks/main.scss";
-@import "blocks/tour.scss";
-@import "blocks/places.scss";
-@import "blocks/preview.scss";
-@import "blocks/countrys.scss";
-@import "blocks/description.scss";
-@import "blocks/reviews.scss";
-@import "blocks/prices.scss";
-@import "blocks/advantages.scss";
-@import "blocks/feedback.scss";
+@import "main/main.scss";
+@import "main/tour.scss";
+@import "main/places.scss";
+@import "main/preview.scss";
+@import "main/countrys.scss";
+@import "main/description.scss";
+@import "main/reviews.scss";
+@import "main/prices.scss";
+@import "main/advantages.scss";
+@import "main/feedback.scss";
 
 // Footer
 
-@import "blocks/footer.scss";
-@import "blocks/travels.scss";
-@import "blocks/contacts.scss";
-@import "blocks/corporate.scss";
+@import "footer/footer.scss";
+@import "footer/travels.scss";
+@import "footer/contacts.scss";
+@import "footer/corporate.scss";

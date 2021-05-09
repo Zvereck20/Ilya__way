@@ -17,4 +17,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    &--wrap {
+      height: 344px;
+      position: absolute;
+      z-index: -1;
+    }
+
+    &--container {
+      padding-top: 40px;
+    }
+  }
 }

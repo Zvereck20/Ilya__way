@@ -1,12 +1,22 @@
 .travels {
-  padding-top: 56px;
   padding-bottom: 15px;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 23px;
+    border-bottom: none;
+  }
 }
 
 .travels__heading {
   margin-left: -10px;
   font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
 }
 
 .travels__wrap {
@@ -15,6 +25,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .travels__list {
@@ -34,6 +48,16 @@
 
   @media (min-width: 360px) {
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+    align-items: flex-start;
+
+    &:last-of-type {
+      margin-top: 0;
+      padding-left: 7px;
+    }
   }
 }
 

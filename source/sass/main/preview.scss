@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
 }
 
 .preview__item {
@@ -16,6 +20,22 @@
   &:first-of-type {
     padding-top: 3px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 16px 5px 16px;
+
+    &:first-of-type {
+      padding-top: 5px;
+    }
+
+    &:last-of-type {
+      margin-top: 12px;
+
+      @media (min-width: 948px) {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .preview__heading {
@@ -25,6 +45,7 @@
   line-height: 29px;
   letter-spacing: -0.415px;
   text-align: center;
+  color: $text-color;
 
   &--wrap {
     padding-top: 17px;
@@ -34,5 +55,11 @@
     position: absolute;
     bottom: 22px;
     left: 52px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--wrap {
+      bottom: 13px;
+    }
   }
 }

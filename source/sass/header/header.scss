@@ -3,4 +3,8 @@
   padding-top: 17px;
   padding-left: 16px;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }

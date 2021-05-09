@@ -1,6 +1,10 @@
 .reviews {
   padding-top: 49px;
   padding-bottom: 91px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+  }
 }
 
 .reviews__wrap {
@@ -14,10 +18,16 @@
 }
 
 .reviews__container {
-  margin: 0 26px;
+  width: 268px;
+  margin: 0 auto;
   padding-top: 16px;
   height: 415px;
   background-color: $main-background;
+
+  @media (min-width: $tablet-width) {
+    width: 382px;
+    padding-top: 35px;
+  }
 }
 
 .reviews__heading {
@@ -34,6 +44,18 @@
     margin: 0 auto;
     background-color: $highlight-color;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    font-size: 30px;
+    line-height: 37px;
+    text-align-last: left;
+
+    &--decorate {
+      margin: 0;
+      margin-left: 30px;
+    }
+  }
 }
 
 .reviews__text {
@@ -44,6 +66,11 @@
   text-align: center;
   letter-spacing: -0.408333px;
   opacity: 0.7;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 7px 30px;
+  }
 }
 
 .person {
@@ -51,10 +78,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 
 .person__avatar {
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
 }
 
 .person__name {
@@ -62,4 +100,10 @@
   padding-left: 10px;
   font-weight: 500;
   line-height: 20px;
+  letter-spacing: -0.466667px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+    margin-top: 15px;
+  }
 }
