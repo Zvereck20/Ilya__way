@@ -58,6 +58,8 @@
 
   @media (min-width: $desktop-width) {
     height: 75px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -72,6 +74,13 @@
     font-size: 30px;
     line-height: 150%;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 80px;
+    letter-spacing: -1.245px;
+    text-align: left;
+  }
 }
 
 .container {
@@ -83,9 +92,9 @@
     padding: 0 21px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   max-width: 1050px;
-  //   padding: 0 50px;
-  //   margin: 0 auto;
-  // }
+  @media (min-width: $desktop-width) {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }

@@ -1,9 +1,41 @@
+.description {
+  min-width: 260px;
+  padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    padding: 0 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
+    width: 40%;
+    padding: 0;
+    padding-top: 60px;
+  }
+}
+
 .desription__heading {
   margin-top: 9px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: 16px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 177px;
+      height: 4px;
+      bottom: -26px;
+      left: 20px;
+      background-color: $highlight-color;
+    }
   }
 }
 
@@ -12,4 +44,17 @@
   text-align: center;
   letter-spacing: -0.466667px;
   opacity: 0.7;
+
+  @media (min-width: $desktop-width) {
+    width: 77%;
+    padding: 34px 19px 29px 19px;
+    text-align: left;
+  }
+}
+
+.description__button {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 20px;
+  }
 }

@@ -1,5 +1,35 @@
 .places {
   padding-top: 89px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 380px;
+  }
+}
+
+.places__heading {
+  position: relative;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+
+    br {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 228px;
+      height: 4px;
+      bottom: -32px;
+      left: 20px;
+      background-color: $highlight-color;
+    }
+  }
 }
 
 .places__text {
@@ -8,5 +38,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    padding: 18px 19px;
+    text-align: left;
   }
 }

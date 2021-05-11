@@ -1,11 +1,15 @@
 .main__heading {
   color: $main-background;
 
+  br {
+    display: none;
+  }
+
   &--wrap {
     width: 100%;
     height: 235px;
     background-color: $toogle-color;
-    background-image: url("../img/header-bc.jpg");
+    background-image: url("../img/header-bc.png");
     background-repeat: no-repeat;
     background-position: 53% 20%;
     background-size: cover;
@@ -28,5 +32,44 @@
     &--container {
       padding-top: 40px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 95px;
+
+    br {
+      display: block;
+    }
+
+    &--wrap {
+      height: 860px;
+    }
+
+    &--container {
+      max-width: 1210px;
+      margin: 0 auto;
+      padding: 150px 20px 0 20px;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.main__decorate {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bc-map.png");
+    background-repeat: no-repeat;
+    background-position: 50% 13%;
+  }
+}
+
+.main__wrapper {
+  @media (min-width: $desktop-width) {
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
   }
 }

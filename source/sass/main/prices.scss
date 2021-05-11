@@ -1,7 +1,43 @@
+.prices {
+  min-width: 260px;
+  padding: 0 16px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    padding: 0 21px;
+  }
+
+  @media (min-width: $prices-width) {
+    min-width: 300px;
+    width: 300px;
+    padding-top: 246px;
+    padding-left: 73px;
+    order: 3;
+  }
+}
+
 .prices__heading {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin-top: 20px;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  @media (min-width: $prices-width) {
+    padding-left: 13px;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 175px;
+      height: 4px;
+      bottom: -25px;
+      left: 20px;
+      background-color: $highlight-color;
+    }
   }
 }
 
@@ -9,6 +45,12 @@
   text-align: center;
   line-height: 170%;
   opacity: 0.7;
+
+  @media (min-width: $prices-width) {
+    width: 100%;
+    padding: 34px 12px 29px;
+    text-align: left;
+  }
 }
 
 .prices__network {
@@ -22,6 +64,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 33px;
   }
+
+  @media (min-width: $prices-width) {
+    padding-left: 58px;
+    font-size: 22px;
+    text-align: left;
+  }
 }
 
 .prices__telephone {
@@ -31,8 +79,27 @@
   line-height: 32px;
   text-align: center;
   color: $highlight-color;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
+  }
+
+  @media (min-width: $prices-width) {
+    padding-left: 58px;
+    font-size: 20px;
+    color: $basik-black;
+    text-align: left;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 2px;
+      left: 14px;
+      background-image: url("../img/phone-icon.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

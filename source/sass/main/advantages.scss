@@ -7,6 +7,12 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 108px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-top: 133px;
+    justify-content: start;
+  }
 }
 
 .advantages__block {
@@ -37,6 +43,30 @@
   @media (min-width: $tablet-width) {
     margin: 14px 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 370px;
+    height: 672px;
+    margin: 14px 17px;
+    display: block;
+
+    &--econom {
+      .advantages__heading {
+        padding: 14px 86px 23px 27px;
+        line-height: 38px;
+        letter-spacing: -1.27273px;
+      }
+
+      .advantages__list {
+        padding-left: 58px;
+        padding-bottom: 0;
+      }
+
+      .advantages__item {
+        padding: 7px 0;
+      }
+    }
+  }
 }
 
 .advantages__heading {
@@ -48,6 +78,13 @@
   text-align: center;
   color: $darck-color;
   opacity: 0.7;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 30px 31px 31px;
+    font-size: 28px;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 .advantages__price {
@@ -59,6 +96,11 @@
   text-align: center;
   color: $darck-color;
   opacity: 0.7;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    text-align: right;
+  }
 }
 
 .advantages__text {
@@ -67,6 +109,13 @@
   line-height: 24px;
   text-align: center;
   border-bottom: 1px solid fade-out($text-color, 0.5);
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 26px;
+    padding-bottom: 26px;
+    text-align: left;
+  }
 }
 
 .advantages__list {
@@ -74,6 +123,10 @@
   padding-right: 20px;
   margin-bottom: 28px;
   margin-top: 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 30px 20px 61px;
+  }
 }
 
 .advantages__item {
@@ -92,10 +145,18 @@
     background-image: url("../img/check-icon.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 6px 0;
+  }
 }
 
 .advantages__button {
   @media (min-width: $tablet-width) {
     width: 288px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 310px;
   }
 }

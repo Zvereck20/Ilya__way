@@ -4,6 +4,13 @@
   @media (min-width: $tablet-width) {
     border-top: 1px solid $border-color;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 26.5%;
+    padding-right: 30px;
+    padding-top: 0;
+    border: none;
+  }
 }
 
 .corporate__text {
@@ -12,4 +19,8 @@
   line-height: 170%;
   color: $darck-color;
   opacity: 0.5;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

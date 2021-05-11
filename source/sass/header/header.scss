@@ -1,3 +1,23 @@
+.header {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.header__wrap {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1210px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .header__logo {
   display: block;
   padding-top: 17px;
@@ -6,5 +26,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+
+    img {
+      width: 57px;
+      height: 22px;
+    }
   }
 }

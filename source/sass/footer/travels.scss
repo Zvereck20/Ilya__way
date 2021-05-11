@@ -6,6 +6,10 @@
     padding-bottom: 23px;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
 }
 
 .travels__heading {
@@ -57,6 +61,15 @@
     &:last-of-type {
       margin-top: 0;
       padding-left: 7px;
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
+
+    &:last-of-type {
+      padding-left: 1px;
     }
   }
 }

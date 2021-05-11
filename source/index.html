@@ -12,27 +12,34 @@
 
 <body class="body">
   <header class="header">
-    <a href="#" class="header__logo">
-      <img src="img/main-logo.svg" alt="Логотип Way" width="44" height="17">
-    </a>
-    <div class="navigation header__navigation visually-hidden">
-      <nav class="header-navigation header-navigation--closed header-navigation--nojs">
-        <button class="header-navigation__toggle ">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul>
-          <li>
-            <a href="#" class="navigation__link">
-              О путешествии
-            </a>
-          </li>
-          <li>
-            <a href="#" class="navigation__link">
-              Цены
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <div class="header__wrap">
+      <a href="#" class="header__logo">
+        <img src="img/main-logo.svg" alt="Логотип Way" width="44" height="17">
+      </a>
+      <div class="navigation header__navigation ">
+        <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+          <button class="header-navigation__toggle ">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                О путешествии
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                Цены
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="tel:+7 (499) -784-684-46" class="navigation__link navigation__link--telephone">
+                +7 (499) -784-684-46
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -40,7 +47,8 @@
     <div class="main__heading--wrap">
       <div class="main__heading--container">
         <h1 class="main__heading block-heading">
-          Путешествие по Европе
+          Путешествие&nbsp; <br>
+           по Европе
         </h1>
       </div>
     </div>
@@ -55,7 +63,7 @@
       </a>
     </section>
     <section class="places container">
-      <h2 class="places__heading block-heading">Места посещения</h2>
+      <h2 class="places__heading block-heading">Места<br> посещения</h2>
       <p class="places__text">
         Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
       </p>
@@ -68,8 +76,13 @@
               <h3 class="preview__heading">Греция</h3>
             </div>
             <picture class="preview__img">
-              <source media="(min-width: 1024px)" srcset="img/">
-              <img src="img/greece-mobile.jpg" alt="Фото Греции" width="288" height="425">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/greece-desktop.webp 1x, img/greece-desktop2x.webp 2x">
+              <source type="image/webp" srcset="img/greece-mobile.webp 1x, img/greece-mobile2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/greece-desktop.jpg 1x, img/greece-desktop2x.jpg 2x">
+              <img src="img/greece-mobile.jpg" alt="Фото Греции" width="288" height="425"
+                srcset="img/greece-mobile2x.jpg 2x">
             </picture>
           </a>
         </li>
@@ -79,8 +92,13 @@
               <h3 class="preview__heading">Албания</h3>
             </div>
             <picture class="preview__img">
-              <source media="(min-width: 1024px)" srcset="img/">
-              <img src="img/albania-mobile.jpg" alt="Фото Албании" width="288" height="425">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/albania-desktop.webp 1x, img/albania-desktop2x.webp 2x">
+              <source type="image/webp" srcset="img/albania-mobile.webp 1x, img/albania-mobile2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/albania-desktop.jpg 1x, img/albania-desktop2x.jpg 2x">
+              <img src="img/albania-mobile.jpg" alt="Фото Албании" width="288" height="425"
+                srcset="img/albania-mobile2x.jpg 2x">
             </picture>
           </a>
         </li>
@@ -90,8 +108,13 @@
               <h3 class="preview__heading">Македония</h3>
             </div>
             <picture class="preview__img">
-              <source media="(min-width: 1024px)" srcset="img/">
-              <img src="img/macedonia-mobile.jpg" alt="Фото Македонии" width="288" height="425">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/macedonia-desktop.webp 1x, img/macedonia-desktop2x.webp 2x">
+              <source type="image/webp" srcset="img/macedonia-mobile.webp 1x, img/macedonia-mobile2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/macedonia-desktop.jpg 1x, img/macedonia-desktop2x.jpg 2x">
+              <img src="img/macedonia-mobile.jpg" alt="Фото Македонии" width="288" height="425"
+                srcset="img/macedonia-mobile2x.jpg 2x">
             </picture>
           </a>
         </li>
@@ -101,8 +124,14 @@
               <h3 class="preview__heading">Черногория</h3>
             </div>
             <picture class="preview__img">
-              <source media="(min-width: 1024px)" srcset="img/">
-              <img src="img/montenegro-mobile.jpg" alt="Фото Черногория" width="288" height="425">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/montenegro-desktop.webp 1x, img/montenegro-desktop2x.webp 2x">
+              <source type="image/webp" srcset="img/montenegro-mobile.webp 1x, img/montenegro-mobile2x.webp 2x">
+
+              <source media="(min-width: 1024px)"
+                srcset="img/montenegro-desktop.jpg 1x, img/montenegro-desktop2x.jpg 2x">
+              <img src="img/montenegro-mobile.jpg" alt="Фото Черногория" width="288" height="425"
+                srcset="img/montenegro-mobile2x.jpg 2x">
             </picture>
           </a>
         </li>
@@ -112,158 +141,176 @@
               <h3 class="preview__heading">Хорватия</h3>
             </div>
             <picture class="preview__img">
-              <source media="(min-width: 1024px)" srcset="img/">
-              <img src="img/croatia-mobile.jpg" alt="Фото Хорватии" width="288" height="425">
+              <source type="image/webp" media="(min-width: 1024px)"
+                srcset="img/croatia-desktop.webp 1x, img/croatia-desktop2x.webp 2x">
+              <source type="image/webp" srcset="img/croatia-mobile.webp 1x, img/croatia-mobile2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/croatia-desktop.jpg 1x, img/croatia-desktop2x.jpg 2x">
+              <img src="img/croatia-mobile.jpg" alt="Фото Хорватии" width="288" height="425"
+                srcset="img/croatia-mobile2x.jpg 2x">
             </picture>
           </a>
         </li>
       </ul>
     </section>
-    <div class="countrys" id="countrys">
-      <ul class="countrys__list">
-        <li class="countrys__item">
-          <a class="countrys__link" href="#" id="greece">
-            Греция
-          </a>
-        </li>
-        <li class="countrys__item">
-          <a class="countrys__link" href="#" id="albania">
-            Албания
-          </a>
-        </li>
-        <li class="countrys__item">
-          <a class="countrys__link" href="#" id="macedonia">
-            Македония
-          </a>
-        </li>
-        <li class="countrys__item">
-          <a class="countrys__link" href="#" id="montenegro">
-            Черногория
-          </a>
-        </li>
-        <li class="countrys__item">
-          <a class="countrys__link" href="#" id="croatia">
-            Хорватия
-          </a>
-        </li>
-      </ul>
-    </div>
-    <section class="description container">
-      <h2 class="desription__heading block-heading">Греция</h2>
-      <p class="description__text">
-        На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
-        Название его «Метеора» буквально переводится как «висящие в воздухе».
-        Этот монастырь основная цель нашего путешествия в Греции.
-        После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
-        наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
-      </p>
-      <button class="button description__button">купить тур сейчас</button>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrap">
-        <div class="reviews__container">
-          <h2 class="reviews__heading">Отзывы</h2>
-          <div class="reviews__heading--decorate"></div>
-          <p class="reviews__text">
-            Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-            Такие же высоченные скалы. Но здесь потрясает масштаб.
-            Огромная территория, высоко в горах.
-            Ощущение такое, как будто стоишь на краю света!
-          </p>
-          <div class="person reviews__person">
-            <img src="img/greece-avatar.jpg" alt="Аватар Влада Голицина" class="person__avatar" width="38" height="38">
-            <p class="person__name">Влада Голицина</p>
-          </div>
-        </div>
+    <section class="countrys">
+      <div class="countrys__wrap" id="countrys">
+        <ul class="countrys__list">
+          <li class="countrys__item">
+            <a class="countrys__link" href="#" id="greece">
+              Греция
+            </a>
+          </li>
+          <li class="countrys__item">
+            <a class="countrys__link" href="#" id="albania">
+              Албания
+            </a>
+          </li>
+          <li class="countrys__item">
+            <a class="countrys__link" href="#" id="macedonia">
+              Македония
+            </a>
+          </li>
+          <li class="countrys__item">
+            <a class="countrys__link" href="#" id="montenegro">
+              Черногория
+            </a>
+          </li>
+          <li class="countrys__item">
+            <a class="countrys__link" href="#" id="croatia">
+              Хорватия
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="prices container">
-      <h2 class="prices__heading block-heading">Цены</h2>
-      <p class="prices__text">
-        Специально для Вас мы разработали 2 пакета цен с разными условиями,
-        отталкиваясь от Ваших потребностей и возможностей.
-        Выберите для себя лучший вариант отпуска и отдохните на все 100%!
-      </p>
-      <h3 class="prices__network">Свяжитесь с нами</h3>
-      <a href="tel:+7(499)-784-684-46" class="prices__telephone">
-        +7 (499) -784-684-46
-      </a>
-    </section>
-    <section class="advantages">
-      <h2 class="visually-hidden">Специальные предложения</h2>
-      <article class="advantages__block">
-        <h2 class="advantages__heading">Комплексный</h2>
-        <p class="advantages__price">$1999</p>
-        <p class="advantages__text">
-          Ознакомьтесь с перечнем того, что входит в данный пакет
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            Разработанный маршрут с гидом группы
-          </li>
-          <li class="advantages__item">
-            Перелет, трансфер и проживание в отелях
-          </li>
-          <li class="advantages__item">
-            Завтраки, ужины в отелях и ланчи на природе
-          </li>
-          <li class="advantages__item">
-            Экскурсии по удивительно красивым местам Европы
-          </li>
-        </ul>
-        <button class="button advantages__button">
-          купить тур сейчас
-        </button>
-      </article>
-      <article class="advantages__block advantages__block--econom">
-        <h2 class="advantages__heading">Экономный</h2>
-        <p class="advantages__price">$1399</p>
-        <p class="advantages__text">
-          Ознакомьтесь с перечнем того, что входит в данный пакет
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            Разработанный маршрут с гидом группы
-          </li>
-          <li class="advantages__item">
-            Перелет и трансфер
-          </li>
-          <li class="advantages__item">
-            Проживание в хостелах при отелях
-          </li>
-          <li class="advantages__item">
-            Только завтраки в отелях
-          </li>
-          <li class="advantages__item">
-            Экскурсии по удивительно красивым местам Европы
-          </li>
-        </ul>
-        <button class="button advantages__button">
-          купить тур сейчас
-        </button>
-      </article>
-    </section>
-    <section class="feedback">
-      <form action="https://echo.htmlacademy.ru" class="feedback__form" method="POST">
-        <div class="feedback__wrap">
-          <h2 class="feedback__heading">У Вас остались вопросы?</h2>
-          <p class="feedback__text">
-            Оставьте свой номер или e-mail и мы свяжемся с Вами
+    <div class="main__decorate">
+      <div class="main__wrapper">
+        <section class="description">
+          <h2 class="desription__heading block-heading">Греция</h2>
+          <p class="description__text">
+            На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
+            Название его «Метеора» буквально переводится как «висящие в воздухе».
+            Этот монастырь основная цель нашего путешествия в Греции.
+            После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+            наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
           </p>
-        </div>
-        <div class="feedback__inform">
-          <label class="feedback__field" for="telephone">
-            <input class="feedback__input feedback__input--telephone" type="number" id="telephone" name="telephone"
-              placeholder="+7  Введите 10 цифр номера">
-          </label>
-          <label for="e-mail">
-          <input class="feedback__input feedback__input--e-mail" type="email" id="e-mail" name="e-mail"
-            placeholder="E-mail">
-          </label>
-        </div>
-        <button type="submit" class="button">отправить</button>
-      </form>
-    </section>
+          <button class="button description__button">купить тур сейчас</button>
+        </section>
+        <section class="reviews">
+          <div class="reviews__wrap">
+            <div class="reviews__container">
+              <h2 class="reviews__heading">Отзывы</h2>
+              <div class="reviews__heading--decorate"></div>
+              <p class="reviews__text">
+                Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                Такие же высоченные скалы. Но здесь потрясает масштаб.
+                Огромная территория, высоко в горах.
+                Ощущение такое, как будто стоишь на краю света!
+              </p>
+              <div class="person reviews__person ">
+                <picture class="person__avatar">
+                  <source type="image/webp" srcset="img/greece-avatar.webp 1x, img/greece-avatar2x.webp 2x">
+                  <img src="img/greece-avatar.jpg" alt="Аватар Влада Голицина" class="person__avatar" width="38"
+                    height="38" srcset="img/greece-avatar2x.jpg 2x">
+                </picture>
+                <p class="person__name">Влада Голицина</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="prices">
+          <h2 class="prices__heading block-heading">Цены</h2>
+          <p class="prices__text">
+            Специально для Вас мы разработали 2 пакета цен с разными условиями,
+            отталкиваясь от Ваших потребностей и возможностей.
+            Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+          </p>
+          <h3 class="prices__network">Свяжитесь с нами</h3>
+          <a href="tel:+7(499)-784-684-46" class="prices__telephone">
+            +7 (499) -784-684-46
+          </a>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Специальные предложения</h2>
+          <article class="advantages__block">
+
+            <h2 class="advantages__heading">Комплексный</h2>
+            <p class="advantages__price">$1999</p>
+
+            <p class="advantages__text">
+              Ознакомьтесь с перечнем того, что входит в данный пакет
+            </p>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                Разработанный маршрут с гидом группы
+              </li>
+              <li class="advantages__item">
+                Перелет, трансфер и проживание в отелях
+              </li>
+              <li class="advantages__item">
+                Завтраки, ужины в отелях и ланчи на природе
+              </li>
+              <li class="advantages__item">
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+            <button class="button advantages__button">
+              купить тур сейчас
+            </button>
+          </article>
+          <article class="advantages__block advantages__block--econom">
+            <h2 class="advantages__heading">Экономный</h2>
+            <p class="advantages__price">$1399</p>
+            <p class="advantages__text">
+              Ознакомьтесь с перечнем того, что входит в данный пакет
+            </p>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                Разработанный маршрут с гидом группы
+              </li>
+              <li class="advantages__item">
+                Перелет и трансфер
+              </li>
+              <li class="advantages__item">
+                Проживание в хостелах при отелях
+              </li>
+              <li class="advantages__item">
+                Только завтраки в отелях
+              </li>
+              <li class="advantages__item">
+                Экскурсии по удивительно красивым местам Европы
+              </li>
+            </ul>
+            <button class="button advantages__button">
+              купить тур сейчас
+            </button>
+          </article>
+        </section>
+        <section class="feedback">
+          <form action="https://echo.htmlacademy.ru" class="feedback__form" method="POST">
+            <div class="feedback__wrap">
+              <h2 class="feedback__heading">У Вас остались вопросы?</h2>
+              <p class="feedback__text">
+                Оставьте свой номер или e-mail и мы свяжемся с Вами
+              </p>
+            </div>
+            <div class="feedback__inform">
+              <label class="feedback__field" for="telephone">
+                <input class="feedback__input feedback__input--telephone" type="number" id="telephone" name="telephone"
+                  placeholder="+7  Введите 10 цифр номера">
+              </label>
+              <label for="e-mail">
+                <input class="feedback__input feedback__input--e-mail" type="email" id="e-mail" name="e-mail"
+                  placeholder="E-mail">
+              </label>
+            </div>
+            <button type="submit" class="button feedback__button">отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </main>
 
   <footer class="footer container">
