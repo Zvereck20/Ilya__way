@@ -1,48 +1,53 @@
 .places {
-  padding-top: 89px;
+  padding-top: 380px;
 
-  @media (min-width: $desktop-width) {
-    padding-top: 380px;
+  @media (max-width: 1023px) {
+    padding-top: 89px;
   }
 }
 
 .places__heading {
+  padding-left: 20px;
   position: relative;
 
-  br {
-    display: none;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 228px;
+    height: 4px;
+    bottom: -32px;
+    left: 20px;
+    background-color: $highlight-color;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 20px;
+  @media (max-width: 1023px) {
+    margin-bottom: 23px;
+    padding-left: 0;
 
     br {
-      display: block;
+      display: none;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      width: 228px;
-      height: 4px;
-      bottom: -32px;
-      left: 20px;
-      background-color: $highlight-color;
+      display: none;
     }
   }
 }
 
 .places__text {
-  text-align: center;
+  width: 30%;
+  padding: 18px 19px;
+  text-align: left;
   letter-spacing: -0.466667px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
+    width: auto;
     padding: 0 180px;
+    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 30%;
-    padding: 18px 19px;
-    text-align: left;
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+    padding: 0;
   }
 }

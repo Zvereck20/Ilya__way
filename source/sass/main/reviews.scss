@@ -1,137 +1,256 @@
 .reviews {
-  padding-top: 49px;
+  padding-top: 63px;
+  padding-left: 6px;
   padding-bottom: 91px;
-  // position: relative;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
     padding-top: 29px;
+    padding-left: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 63px;
-    padding-left: 6px;
+  @media (max-width: 767px) {
+    padding-top: 49px;
+    padding-bottom: 85px;
   }
 }
 
 .reviews__wrap {
-  height: 366px;
-  padding-top: 51px;
-  border-color: inherit;
-  background-image: url("../img/greece-desktop.jpg");
+  width: 430px;
+  height: 596px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 82%;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 78px;
-    height: 335px;
-    background-image: url("../img/reviews-bc__tablet.png");
+  &--greece {
+    background-image: url("../img/greece-bc__desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/greece-bc__desktop2x.png");
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 430px;
-    height: 596px;
-    padding-top: 0;
-    background-image: url("../img/reviews-bc__desktop.png");
+  &--albania {
+    background-image: url("../img/albania-bc__desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/albania-bc__desktop2x.png");
+    }
+  }
+
+  &--macedonia {
+    background-image: url("../img/macedonia-bc__desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/macedonia-bc__desktop2x.png");
+    }
+  }
+
+  &--montenegro {
+    background-image: url("../img/montenegro-bc__desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/montenegro-bc__desktop2x.png");
+    }
+  }
+
+  &--croatia {
+    background-image: url("../img/croatia-bc__desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/croatia-bc__desktop2x.png");
+    }
+  }
+
+  @media (max-width: 1023px) {
+    width: auto;
+    padding-top: 78px;
+    height: 335px;
+
+    &--greece {
+      background-image: url("../img/greece-bc__tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/greece-bc__tablet2x.png");
+      }
+    }
+
+    &--albania {
+      background-image: url("../img/albania-bc__tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/albania-bc__tablet2x.png");
+      }
+    }
+
+    &--macedonia {
+      background-image: url("../img/macedonia-bc__tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/macedonia-bc__tablet2x.png");
+      }
+    }
+
+    &--montenegro {
+      background-image: url("../img/montenegro-bc__tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/montenegro-bc__tablet2x.png");
+      }
+    }
+
+    &--croatia {
+      background-image: url("../img/croatia-bc__tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/croatia-bc__tablet2x.png");
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    height: 366px;
+    padding-top: 51px;
+
+    &--greece {
+      background-image: url("../img/greece-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/greece-desktop2x.jpg");
+      }
+    }
+
+    &--albania {
+      background-image: url("../img/albania-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/albania-desktop2x.jpg");
+      }
+    }
+
+    &--macedonia {
+      background-image: url("../img/macedonis-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/macedonis-desktop2x.jpg");
+      }
+    }
+
+    &--montenegro {
+      background-image: url("../img/montenegro-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/montenegro-desktop2x.jpg");
+      }
+    }
+
+    &--croatia {
+      background-image: url("../img/croatia-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/croatia-desktop2x.jpg");
+      }
+    }
   }
 }
 
 .reviews__container {
-  width: 268px;
-  margin: 0 auto;
-  padding-top: 16px;
-  height: 415px;
+  width: 382px;
+  padding-bottom: 25px;
+  padding-top: 5px;
+  position: absolute;
+  top: 176px;
+  right: 40px;
   background-color: $main-background;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
     width: 382px;
+    margin: 0 auto;
     padding-top: 7px;
+    position: static;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 382px;
-    height: 362px;
-    padding-top: 5px;
-    position: absolute;
-    top: 176px;
-    right: 40px;
+  @media (max-width: 767px) {
+    width: 268px;
+    padding-top: 14px;
   }
 }
 
 .reviews__heading {
   margin-bottom: 11px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+  padding-left: 30px;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: left;
   letter-spacing: -0.691667px;
 
   &--decorate {
     width: 68px;
     height: 1px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 30px;
     background-color: $highlight-color;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    font-size: 30px;
-    line-height: 37px;
-    text-align-last: left;
+  @media (max-width: 767px) {
+    padding-left: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
 
     &--decorate {
-      margin: 0;
-      margin-left: 30px;
+      margin: 0 auto;
     }
   }
 }
 
 .reviews__text {
   margin-bottom: 9px;
-  padding: 7px 20px;
+  padding: 7px 30px;
   font-size: 14px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   letter-spacing: -0.408333px;
   opacity: 0.7;
 
-  @media (min-width: $tablet-width) {
-    text-align: left;
-    padding: 7px 30px;
+  @media (max-width: 767px) {
+    text-align: center;
+    padding: 7px 20px;
   }
 }
 
 .person {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-top: 10px;
-    flex-direction: row;
-    justify-content: flex-start;
+  @media (max-width: 767px) {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .person__avatar {
+  margin-top: 2px;
   border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 2px;
+  @media (max-width: 767px) {
+    margin-top: 0;
   }
 }
 
 .person__name {
-  margin-top: 3px;
-  padding-left: 10px;
+  margin-top: 15px;
+  padding-left: 16px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.466667px;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 16px;
-    margin-top: 15px;
+  @media (max-width: 767px) {
+    margin-top: 3px;
+    padding-left: 10px;
   }
 }

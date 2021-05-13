@@ -1,75 +1,78 @@
 .travels {
-  padding-bottom: 15px;
-  border-bottom: 1px solid $border-color;
+  padding-bottom: 23px;
+  padding-left: 33px;
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 23px;
-    border-bottom: none;
+  @media (max-width: 1023px) {
+    padding-left: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-left: 33px;
+  @media (max-width: 767px) {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color;
   }
 }
 
 .travels__heading {
+  padding-left: 10px;
+  margin-bottom: 15px;
   margin-left: -10px;
   font-weight: 600;
+  text-align: left;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 10px;
-    margin-bottom: 15px;
-    text-align: left;
+  @media (max-width: 767px) {
+    padding-left: 0;
+    margin-bottom: 13;
+    text-align: center;
   }
 }
 
 .travels__wrap {
-  padding: 0 23px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  @media (max-width: 767px) {
+    padding: 0 23px;
   }
 }
 
 .travels__list {
   margin: 0;
   padding: 0;
-  padding-right: 11px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   &:last-of-type {
-    margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 0;
+    padding-left: 1px;
+    padding-right: 0;
   }
 
-  @media (min-width: 360px) {
-    margin: 0 auto;
-  }
-
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
     padding-right: 45px;
-    align-items: flex-start;
 
     &:last-of-type {
-      margin-top: 0;
       padding-left: 7px;
-      padding-right: 0;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-right: 50px;
+  @media (min-width: 349px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    align-items: center;
+    padding-right: 11px;
 
     &:last-of-type {
-      padding-left: 1px;
+      margin: 0 auto;
+      margin-top: 10px;
+      padding: 0;
     }
   }
 }

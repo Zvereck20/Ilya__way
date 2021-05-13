@@ -1,49 +1,55 @@
 .tour {
-  @media (min-width: $tablet-width) {
+  padding-top: 360px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (max-width: 1023px) {
     padding-top: 104px;
-    padding-bottom: 48px;
+    display: block;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 360px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+  @media (max-width: 767px) {
+    padding: 0;
   }
 }
 
 .tour__text {
-  padding-top: 5px;
-  padding-bottom: 3px;
+  width: 30%;
+  padding: 0 127px;
   margin-left: -5px;
-  text-align: center;
+  margin-bottom: 10px;
+  text-align: left;
   line-height: 170%;
   letter-spacing: -0.466667px;
+  color: $main-background;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
+    width: auto;
     padding: 0 150px;
-    margin-bottom: 10px;
-    color: $main-background;
+    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 30%;
-    padding: 0 127px;
-    text-align: left;
+  @media (max-width: 767px) {
+    padding: 5px 16px 10px 16px;
+    color: $text-color;
   }
 }
 
 .tour__button {
-  justify-content: start;
+  width: 340px;
+  margin: 22px 150px;
   padding-left: 40px;
+  justify-content: start;
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 30px;
     right: 40px;
     width: 15px;
     height: 15px;
@@ -51,12 +57,16 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 340px;
-    margin: 23px 150px;
+  @media (max-width: 1023px) {
+    width: 250px;
+    margin: 0 auto;
 
     &::after {
-      top: 30px;
+      top: 17px;
     }
+  }
+
+  @media (max-width: 767px) {
+    width: 288px;
   }
 }

@@ -15,6 +15,7 @@
   background-color: $main-background;
   color: $text-color;
   overflow-x: hidden;
+  position: relative;
 }
 
 .visually-hidden {
@@ -37,11 +38,11 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  width: 288px;
-  height: 50px;
+  width: 250px;
+  height: 75px;
+  font-size: 12px;
+  line-height: 15px;
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $main-background;
@@ -52,14 +53,15 @@
     background-color: $hover-color;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 250px;
+  @media (max-width: 1023px) {
+    font-size: 10px;
+    line-height: 12px;
+    height: 50px;
   }
 
-  @media (min-width: $desktop-width) {
-    height: 75px;
-    font-size: 12px;
-    line-height: 15px;
+  @media (max-width: 767px) {
+    width: 288px;
+
   }
 }
 

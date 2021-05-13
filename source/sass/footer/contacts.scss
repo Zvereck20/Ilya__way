@@ -1,40 +1,43 @@
 .contacts {
-  padding-top: 15px;
   padding-bottom: 13px;
-  border-bottom: 1px solid $border-color;
+  padding-left: 55px;
   position: relative;
 
-  @media (min-width: $tablet-width) {
-    padding-top: 0;
-    border-bottom: none;
+  @media (max-width: 1023px) {
+    padding-left: 0;
   }
 
-  @media (min-width: 1100px) {
-    padding-left: 55px;
+  @media (max-width: 767px) {
+    padding-top: 15px;
+    border-bottom: 1px solid $border-color;
   }
 }
 
 .contacts__heading {
   margin-left: -11px;
+  padding-left: 18px;
+  text-align: left;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 18px;
-    text-align: left;
+  @media (max-width: 767px) {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
 .contacts__wrap {
   width: 288px;
   margin: 0 auto;
+  text-align: left;
 
-  @media (min-width: $tablet-width) {
-    text-align: left;
+  @media (max-width: 767px) {
+    text-align: center;
   }
 }
 
 .contacts__link {
-  padding-top: 13px;
-  padding-left: 40px;
+  padding-top: 8px;
+  padding-left: 48px;
+  padding-bottom: 9px;
   display: block;
   color: $highlight-color;
   position: relative;
@@ -47,8 +50,8 @@
       position: absolute;
       width: 26px;
       height: 20px;
-      top: 9px;
-      left: 15px;
+      top: 4px;
+      left: 7px;
       background-image: url("../img/mail-icon.svg");
       background-repeat: no-repeat;
     }
@@ -63,26 +66,26 @@
       position: absolute;
       width: 18px;
       height: 27px;
-      top: 12px;
-      left: 46px;
+      top: 7px;
+      left: 13px;
       background-image: url("../img/phone-icon.svg");
       background-repeat: no-repeat;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 8px;
-    padding-left: 48px;
-    padding-bottom: 9px;
+  @media (max-width: 767px) {
+    padding-top: 13px;
+    padding-left: 40px;
+    padding-bottom: 0;
 
     &--e-mail::before {
-      top: 4px;
-      left: 7px;
+      top: 9px;
+      left: 15px;
     }
 
     &--telephone::before {
-      top: 7px;
-      left: 13px;
+      top: 12px;
+      left: 46px;
     }
   }
 }

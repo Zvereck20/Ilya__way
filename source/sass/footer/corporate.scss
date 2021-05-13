@@ -1,26 +1,29 @@
 .corporate {
-  padding-top: 15px;
+  width: 26.5%;
+  padding-right: 30px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: 1023px) {
+    width: auto;
+    padding-top: 15px;
+    padding-right: 0;
     border-top: 1px solid $border-color;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 26.5%;
-    padding-right: 30px;
-    padding-top: 0;
-    border: none;
+  @media (max-width: 767px) {
+    padding-top: 13px;
   }
 }
+
 
 .corporate__text {
   margin-bottom: 25px;
   padding-top: 7px;
   line-height: 170%;
+  text-align: left;
   color: $darck-color;
   opacity: 0.5;
 
-  @media (min-width: $desktop-width) {
-    text-align: left;
+  @media (max-width: 1023px) {
+    text-align: center;
   }
 }
