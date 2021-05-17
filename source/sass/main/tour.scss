@@ -7,13 +7,14 @@
   align-items: flex-end;
   justify-content: center;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding-top: 104px;
     display: block;
   }
 
-  @media (max-width: 767px) {
-    padding: 0;
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -27,13 +28,13 @@
   letter-spacing: -0.466667px;
   color: $main-background;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: auto;
     padding: 0 150px;
     text-align: center;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     padding: 5px 16px 10px 16px;
     color: $text-color;
   }
@@ -57,7 +58,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: 250px;
     margin: 0 auto;
 
@@ -66,7 +67,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     width: 288px;
   }
 }

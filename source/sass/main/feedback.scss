@@ -15,7 +15,7 @@
     background-image: url("../img/question-bc2x.jpg");
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: auto;
     height: auto;
     margin: 0;
@@ -42,7 +42,7 @@
   box-shadow: 0px 4px 30px fade-out($shadow-color, 0.9);
   border-radius: 5px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: 658px;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -63,7 +63,7 @@
 .feedback__wrap {
   padding: 0 16px;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     padding-bottom: 15px;
   }
 }
@@ -76,7 +76,7 @@
   line-height: 32px;
   text-align: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     margin-bottom: 18px;
   }
 }
@@ -87,7 +87,7 @@
   text-align: center;
   line-height: 150%;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -101,7 +101,7 @@
   justify-content: space-between;
   position: relative;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     padding: 0;
     padding-bottom: 4px;
     justify-content: center;
@@ -142,10 +142,10 @@
     padding-left: 12px;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     margin-right: 16px;
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile-width) {
       width: 235px;
       margin-bottom: 16px;
 
@@ -162,12 +162,12 @@
   width: 176px;
   height: 50px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: 250px;
     height: 50px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     width: 288px;
   }
 }

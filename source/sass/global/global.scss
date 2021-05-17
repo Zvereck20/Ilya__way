@@ -53,50 +53,50 @@
     background-color: $hover-color;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     font-size: 10px;
     line-height: 12px;
     height: 50px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     width: 288px;
-
   }
 }
 
 .block-heading {
   font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 24px;
+  font-size: 55px;
   font-weight: 600;
-  line-height: 36px;
-  text-align: center;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  text-align: left;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     font-size: 30px;
     line-height: 150%;
+    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 55px;
-    line-height: 80px;
-    letter-spacing: -1.245px;
-    text-align: left;
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
 .container {
-  min-width: 260px;
-  padding: 0 16px;
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     min-width: 668px;
     padding: 0 21px;
+    margin: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 1210px;
-    padding: 0 20px;
-    margin: 0 auto;
+  @media (max-width: $mobile-width) {
+    min-width: 260px;
+    padding: 0 16px;
   }
 }

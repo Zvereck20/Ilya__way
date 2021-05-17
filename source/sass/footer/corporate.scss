@@ -2,7 +2,7 @@
   width: 26.5%;
   padding-right: 30px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: auto;
     padding-top: 15px;
     padding-right: 0;
@@ -23,7 +23,7 @@
   color: $darck-color;
   opacity: 0.5;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     text-align: center;
   }
 }

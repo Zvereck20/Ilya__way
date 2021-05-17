@@ -1,7 +1,7 @@
 .places {
   padding-top: 380px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding-top: 89px;
   }
 }
@@ -20,7 +20,7 @@
     background-color: $highlight-color;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     margin-bottom: 23px;
     padding-left: 0;
 
@@ -40,13 +40,13 @@
   text-align: left;
   letter-spacing: -0.466667px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: auto;
     padding: 0 180px;
     text-align: center;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     margin-bottom: 12px;
     padding: 0;
   }

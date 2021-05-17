@@ -6,13 +6,13 @@
   flex-wrap: wrap;
   justify-content: start;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
 
     padding-top: 0;
     justify-content: center;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     padding-bottom: 33px;
   }
 }
@@ -26,7 +26,7 @@
   border-radius: 6px;
 
   &:hover {
-    border: 1px solid #FE7865;
+    border: 1px solid $highlight-color;
     box-sizing: padding-box;
   }
 
@@ -56,7 +56,7 @@
     }
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: 288px;
     padding-bottom: 0;
     margin: 14px 24px;
@@ -80,7 +80,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     height: 614px;
     margin: 14px 16px;
   }
@@ -98,7 +98,7 @@
   color: $darck-color;
   opacity: 0.7;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding: 0;
     font-size: 24px;
     text-align: center;
@@ -118,7 +118,7 @@
   color: $darck-color;
   opacity: 0.7;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     display: block;
     text-align: center;
   }
@@ -133,7 +133,7 @@
   text-align: left;
   border-bottom: 1px solid fade-out($text-color, 0.5);
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 8px;
@@ -146,7 +146,7 @@
   margin-bottom: 28px;
   margin-top: 0;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding: 0 20px 0 48px;
   }
 }
@@ -168,7 +168,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding: 4px 0;
   }
 }
@@ -176,7 +176,7 @@
 .advantages__button {
   width: 310px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     width: 288px;
   }
 }

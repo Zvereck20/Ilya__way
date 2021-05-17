@@ -30,7 +30,7 @@
     background-color: $border-color;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     padding-top: 66px;
     padding-bottom: 0;
 
@@ -45,7 +45,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width) {
     padding-top: 56px;
     display: block;
 
@@ -62,7 +62,7 @@
   text-align: left;
   color: $darck-color;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $tablet-width) {
     text-align: center;
   }
 }
