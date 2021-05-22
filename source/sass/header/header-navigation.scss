@@ -52,6 +52,7 @@
 }
 
 .navigation--opened .navigation__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -89,17 +90,13 @@
   }
 
   .navigation--nojs .navigation__list {
-    position: static;
+    display: block;
     min-height: 0;
   }
 
   .navigation--nojs .navigation__item {
     display: flex;
     align-items: center;
-
-    a {
-      margin-left: 76px;
-    }
   }
 }
 
